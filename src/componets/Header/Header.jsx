@@ -1,11 +1,12 @@
-
+import logo from "../../assets/logo.png"
+import moment from 'moment';
 
 const Header = () => {
     return (
         <div className="text-center">
-            <h2 className="text-6xl font-bold my-5">The DailyStar News</h2>
+            <img className="mx-auto" src={logo} alt="" />
             <p>Journalism Without Fear or Favour</p>
-            <p>Sunday, october 02, 2023</p>
+            <p>{moment().format("dddd, MMMM Do YYYY, h:mm:ss a")}</p>
         </div>
     );
 };
